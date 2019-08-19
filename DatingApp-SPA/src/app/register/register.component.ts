@@ -1,5 +1,6 @@
+import { ErrorInterceptor } from './../_services/error.interceptor';
 import { AuthService } from './../_services/auth.service';
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-register',
@@ -7,7 +8,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  
   @Output() cancelRegister = new EventEmitter();
 model: any = {};
   constructor(private authService: AuthService) { }
