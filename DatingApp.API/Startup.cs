@@ -21,6 +21,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using DatingApp.API.Helpers;
 using AutoMapper;
+using Newtonsoft.Json.Serialization;
 
 
 
@@ -60,6 +61,7 @@ namespace DatingApp.API
 
                         };
                      });
+                      
 
         }
 
